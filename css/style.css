@@ -1,0 +1,96 @@
+body{
+    font-family: 'montserrat', sans-serif;
+    background:white;
+}
+/* navbar */
+.sidebar{
+    height:100vh; 
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9));
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.bottom-border{
+    border-bottom: 2px solid rgb(185, 176, 176);
+}
+.sidebar .active{
+    background-color: black;
+    border-radius: 7px;
+    box-shadow:2px 5px 20px black;
+    transition: all .3s ease;
+}
+.sidebar .active:hover{
+    background-color: red;
+    transform:translate(-5px);
+
+}
+.sidebar-link{
+    transition: all 0.3s ease;
+}
+.sidebar-link:hover{
+    background-color: grey;
+    border-radius: 7px;
+}
+.search{
+    background: transparent;
+    border:none;
+    border-radius: 0;
+    border-bottom: 2px solid grey;
+    transition: all .4s;
+}
+.search-input:focus{
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid red;
+}
+.search-btn {
+    border-radius: 50%;
+    padding: 10px 16px;
+    transition: all .4s ease;
+}
+
+.search-btn:hover {
+    background-color: grey;
+    transform: translateY(-1px);
+     
+}
+/* makes the icon a single entity */
+.icon-notify{
+    position: relative;
+
+}
+/* control child element to move around */
+.icon-notify-link::after{
+    content: "";
+    position: absolute;
+    top:7px;
+    left:15px;
+    height:12px;
+    width:12px;
+    border-radius:50%;
+    background-color: red;
+
+
+}
+.a{
+    margin-left:200px!important;
+}
+.cards
+{
+    flex: 0 0 20%;
+    width: 20%;
+}
+.card-a:hover{
+    border-radius: 2px;
+    box-shadow:3px 2px 2px rgb(122, 117, 117);
+    transform: translateY(-1px);
+    
+}
+.li-a{
+    text-decoration: none!important;
+    color: green!important;
+}
+.d{
+    margin-left:170px!important;
+}
+
